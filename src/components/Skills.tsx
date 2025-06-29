@@ -1,5 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Code, Users, TrendingUp, Target, Lightbulb, Globe } from 'lucide-react';
+import { Code, Users, TrendingUp, Lightbulb } from 'lucide-react';
+
+interface Skill {
+  name: string;
+  level: number;
+  icon: React.ComponentType<{ className?: string; size?: number }>;
+}
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,14 +28,14 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
-  const technicalSkills = [
+  const technicalSkills: Skill[] = [
     { name: 'JavaScript/TypeScript', level: 85, icon: Code },
     { name: 'React.js', level: 80, icon: Code },
     { name: 'HTML/CSS', level: 90, icon: Code },
     { name: 'Node.js', level: 75, icon: Code },
   ];
 
-  const softSkills = [
+  const softSkills: Skill[] = [
     { name: 'Problem Solving', level: 90, icon: Lightbulb },
     { name: 'Communication', level: 85, icon: Users },
     { name: 'Team Collaboration', level: 88, icon: Users },
@@ -49,7 +55,7 @@ const Skills = () => {
     'Firebase'
   ];
 
-  const SkillBar = ({ skill, index }: { skill: any; index: number }) => (
+  const SkillBar = ({ skill, index }: { skill: Skill; index: number }) => (
     <div className="mb-6">
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center space-x-2">

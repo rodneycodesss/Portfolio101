@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, Github, Linkedin, Mail, Download, X } from 'lucide-react';
+import { ArrowDown, Linkedin, Mail, Download, X } from 'lucide-react';
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
