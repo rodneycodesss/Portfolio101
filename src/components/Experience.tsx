@@ -6,9 +6,15 @@ const Experience = () => {
     {
       title: "Software Engineer",
       company: "Freelance",
+      location: "Remote",
       period: "2023 - Present",
       description: "Developing responsive web applications using React, TypeScript, and modern web technologies. Collaborating with clients to deliver custom solutions that meet their specific needs.",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Git"]
+      achievements: [
+        "Built responsive web applications using React, TypeScript, and modern web technologies",
+        "Collaborated with clients to deliver custom solutions that meet their specific needs",
+        "Implemented best practices in code quality, testing, and deployment",
+        "Created user-friendly interfaces with focus on performance and accessibility"
+      ]
     },
     {
       title: "Seasoned Forex Trader",
