@@ -22,7 +22,7 @@ const Hero = () => {
                 onClick={() => setIsModalOpen(true)}
               >
                 <img 
-                  src="./Rodney.jpeg" 
+                  src="Rodney.jpeg" 
                   alt="Rodney Gilbert" 
                   className="w-full h-full object-cover rounded-full"
                   style={{
@@ -50,7 +50,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <a 
-                href="./Rodney_Gilbert_Resume.html" 
+                href="Rodney_Gilbert_Resume.html" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center space-x-2"
@@ -100,7 +100,7 @@ const Hero = () => {
               <X size={24} className="text-gray-600 dark:text-gray-300" />
             </button>
             <img 
-              src="./Rodney.jpeg" 
+              src="Rodney.jpeg" 
               alt="Rodney Gilbert - Full Photo" 
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
             />
