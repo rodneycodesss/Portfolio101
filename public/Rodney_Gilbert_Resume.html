@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodney Gilbert - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2563eb;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1e293b;
+        }
+        
+        .company {
+            font-weight: 500;
+            color: #64748b;
+        }
+        
+        .date {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+        
+        .description {
+            margin: 8px 0;
+            color: #475569;
+        }
+        
+        .achievements {
+            list-style: none;
+            margin-left: 20px;
+        }
+        
+        .achievements li {
+            position: relative;
+            margin-bottom: 5px;
+            color: #475569;
+        }
+        
+        .achievements li:before {
+            content: "•";
+            color: #2563eb;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .skill-category h4 {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        
+        .skill-list {
+            list-style: none;
+            color: #475569;
+        }
+        
+        .skill-list li {
+            margin-bottom: 3px;
+        }
+        
+        .certifications {
+            list-style: none;
+        }
+        
+        .certifications li {
+            margin-bottom: 8px;
+            padding: 10px;
+            background: #f8fafc;
+            border-radius: 6px;
+            border-left: 3px solid #2563eb;
+        }
+        
+        .cert-name {
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .cert-issuer {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .cert-year {
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+        
+        @media print {
+            body {
+                font-size: 12px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="name">Rodney Gilbert</h1>
+            <p class="title">Software Development Student & Forex Trading Professional</p>
+            <div class="contact-info">
+                <div class="contact-item">📧 rodneygilbert321@gmail.com</div>
+                <div class="contact-item">📱 +254780482290</div>
+                <div class="contact-item">🌍 Kenya (Remote)</div>
+                <div class="contact-item">🔗 linkedin.com/in/rodney-gilbert-b00867236</div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="description">
+                Passionate software development student with a unique background in forex trading and financial markets. 
+                Combining deep market knowledge from years of trading experience with growing expertise in modern web technologies. 
+                Former partner with top-tier FX brokers worldwide, bringing a unique perspective that bridges finance and technology. 
+                Well-suited for fintech development and financial software solutions with strong analytical and problem-solving skills.
+            </p>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">Software Development Student</div>
+                <div class="company">Zindua School</div>
+                <div class="date">April 2025 - Present</div>
+                <div class="description">Currently enrolled in an intensive software development program learning full-stack web development technologies and best practices.</div>
+                <ul class="achievements">
+                    <li>Learning modern web technologies including React, Node.js, and TypeScript</li>
+                    <li>Working on real-world projects to build portfolio and practical skills</li>
+                    <li>Collaborating with peers on group projects and code reviews</li>
+                    <li>Developing problem-solving skills through algorithm challenges</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Seasoned Forex Trader</div>
+                <div class="company">Independent Trading</div>
+                <div class="date">2020 - Present</div>
+                <div class="description">Experienced forex trader with deep market knowledge and former partnerships with top-tier FX brokers worldwide.</div>
+                <ul class="achievements">
+                    <li>Developed comprehensive understanding of market depth and liquidity analysis</li>
+                    <li>Former partner with leading FX brokers including major international institutions</li>
+                    <li>Specialized in technical analysis, risk management, and algorithmic trading strategies</li>
+                    <li>Consistently profitable trading across multiple currency pairs and market conditions</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Freelance Web Developer</div>
+                <div class="company">Self-Employed</div>
+                <div class="date">2024 - Present</div>
+                <div class="description">Providing web development services to small businesses and individuals, creating responsive and modern websites.</div>
+                <ul class="achievements">
+                    <li>Developed 5+ responsive websites using HTML, CSS, and JavaScript</li>
+                    <li>Implemented modern design principles and user experience best practices</li>
+                    <li>Collaborated with clients to understand requirements and deliver solutions</li>
+                    <li>Maintained and updated existing websites for ongoing clients</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Cybersecurity Training Participant</div>
+                <div class="company">OPSWAT Academy</div>
+                <div class="date">2025 - Present</div>
+                <div class="description">Participating in comprehensive cybersecurity training program to develop security skills and knowledge.</div>
+                <ul class="achievements">
+                    <li>Learning cybersecurity fundamentals and best practices</li>
+                    <li>Understanding threat detection and prevention techniques</li>
+                    <li>Gaining hands-on experience with security tools and technologies</li>
+                    <li>Preparing for industry-recognized cybersecurity certifications</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">Education & Training</h2>
+            
+            <div class="education-item">
+                <div class="job-title">Software Development Program</div>
+                <div class="company">Zindua School</div>
+                <div class="date">April 2025 - September 2025</div>
+                <div class="description">Intensive full-stack web development program covering modern technologies and best practices.</div>
+            </div>
+
+            <div class="education-item">
+                <div class="job-title">Cybersecurity Fundamentals</div>
+                <div class="company">OPSWAT Academy</div>
+                <div class="date">2025</div>
+                <div class="description">Comprehensive cybersecurity training program focusing on security tools and threat prevention.</div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul class="skill-list">
+                        <li>JavaScript/TypeScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Python (Basic)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Frameworks & Libraries</h4>
+                    <ul class="skill-list">
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Technologies</h4>
+                    <ul class="skill-list">
+                        <li>VS Code</li>
+                        <li>Git & GitHub</li>
+                        <li>Chrome DevTools</li>
+                        <li>Postman</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <ul class="skill-list">
+                        <li>Problem Solving</li>
+                        <li>Communication</li>
+                        <li>Team Collaboration</li>
+                        <li>Learning Agility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+            <h2 class="section-title">Professional Certifications</h2>
+            <ul class="certifications">
+                <li>
+                    <div class="cert-name">Risk Management in Finance</div>
+                    <div class="cert-issuer">Coursera</div>
+                    <div class="cert-year">2024</div>
+                </li>
+                <li>
+                    <div class="cert-name">Financial Analysis</div>
+                    <div class="cert-issuer">Coursera</div>
+                    <div class="cert-year">2024</div>
+                </li>
+                <li>
+                    <div class="cert-name">Cybersecurity Fundamentals</div>
+                    <div class="cert-issuer">OPSWAT</div>
+                    <div class="cert-year">2025</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
