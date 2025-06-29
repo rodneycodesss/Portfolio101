@@ -4,17 +4,11 @@ import { Briefcase, Calendar, MapPin, ChevronRight } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Development Student",
-      company: "Zindua School",
-      location: "Online/Remote",
-      period: "April 2025 - Present",
-      description: "Currently enrolled in an intensive software development program learning full-stack web development technologies and best practices.",
-      achievements: [
-        "Learning modern web technologies including React, Node.js, and TypeScript",
-        "Working on real-world projects to build portfolio and practical skills",
-        "Collaborating with peers on group projects and code reviews",
-        "Developing problem-solving skills through algorithm challenges"
-      ]
+      title: "Software Engineer",
+      company: "Freelance",
+      period: "2023 - Present",
+      description: "Developing responsive web applications using React, TypeScript, and modern web technologies. Collaborating with clients to deliver custom solutions that meet their specific needs.",
+      skills: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Git"]
     },
     {
       title: "Seasoned Forex Trader",

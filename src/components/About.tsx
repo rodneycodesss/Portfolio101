@@ -29,13 +29,12 @@ const About = () => {
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            I am a passionate software development student with a unique background in forex trading and financial markets. 
-            My journey combines deep market knowledge from years of trading experience with a growing expertise in modern web technologies. 
-            As a former partner with top-tier FX brokers worldwide, I bring a unique perspective that bridges finance and technology, 
-            making me well-suited for fintech development and financial software solutions.
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            I'm a passionate Software Engineer with a unique background that combines technology and financial markets expertise. 
+            My journey from forex trading to software development has given me a distinctive perspective on creating 
+            efficient, user-focused applications.
           </p>
         </div>
 

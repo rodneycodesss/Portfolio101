@@ -9,8 +9,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold mb-4">Rodney Gilbert</h3>
-            <p className="text-gray-400 mb-4">
-              Software Development Student passionate about creating innovative web solutions and learning new technologies.
+            <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-md">
+              Software Engineer passionate about creating innovative web solutions and learning new technologies.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
               <a

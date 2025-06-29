@@ -45,7 +45,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Software Development Student passionate about creating innovative web solutions and learning new technologies.
+              Software Engineer passionate about creating innovative web solutions and learning new technologies.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
