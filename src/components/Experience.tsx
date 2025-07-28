@@ -4,7 +4,7 @@ import { Briefcase, Calendar, MapPin, ChevronRight } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Engineer",
+      title: "Frontend Developer",
       company: "Freelance",
       location: "Remote",
       period: "2023 - Present",
@@ -33,7 +33,7 @@ const Experience = () => {
       title: "Freelance Web Developer",
       company: "Self-Employed",
       location: "Remote",
-      period: "2024 - Present",
+      period: "2020 - Present",
       description: "Providing web development services to small businesses and individuals, creating responsive and modern websites.",
       achievements: [
         "Developed 5+ responsive websites using HTML, CSS, and JavaScript",
@@ -117,5 +117,6 @@ const Experience = () => {
     </section>
   );
 };
+
 
 export default Experience;
