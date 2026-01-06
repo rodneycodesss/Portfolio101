@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, GraduationCap, Briefcase, User, Mail, Sun, Moon } from 'lucide-react';
+import { Menu, X, Home, GraduationCap, Briefcase, User, Mail, Sun, Moon, FolderOpen } from 'lucide-react';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -12,7 +12,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'education', 'experience', 'skills', 'contact'];
+      const sections = ['home', 'about', 'education', 'experience', 'skills', 'projects', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -44,6 +44,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
     { id: 'education', label: 'Education', icon: GraduationCap },
     { id: 'experience', label: 'Experience', icon: Briefcase },
     { id: 'skills', label: 'Skills', icon: GraduationCap },
+    { id: 'projects', label: 'Projects', icon: FolderOpen },
     { id: 'contact', label: 'Contact', icon: Mail },
   ];
 

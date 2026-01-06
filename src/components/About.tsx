@@ -32,9 +32,10 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate Software Engineer with a unique background that combines technology and financial markets expertise. 
-            My journey from forex trading to software development has given me a distinctive perspective on creating 
-            efficient, user-focused applications.
+            Junior Software Engineer with a foundation in full-stack web development, IT systems, and financial markets. 
+            Currently building software systems through structured training and hands-on projects, with strong interest in 
+            fintech, edtech, and scalable web platforms. Brings analytical thinking from 5+ years of forex trading experience 
+            and applies it to problem-solving in software development.
           </p>
         </div>
 

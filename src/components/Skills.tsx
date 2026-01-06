@@ -32,7 +32,8 @@ const Skills = () => {
     { name: 'JavaScript/TypeScript', level: 85, icon: Code },
     { name: 'React.js', level: 80, icon: Code },
     { name: 'HTML/CSS', level: 90, icon: Code },
-    { name: 'Node.js', level: 75, icon: Code },
+    { name: 'Python (Basic)', level: 65, icon: Code },
+    { name: 'Django', level: 70, icon: Code },
   ];
 
   const softSkills: Skill[] = [
@@ -51,8 +52,16 @@ const Skills = () => {
     'npm/yarn',
     'Vite',
     'Tailwind CSS',
-    'MongoDB',
-    'Firebase'
+    'Firebase',
+    'Supabase',
+    'REST APIs',
+    'Netlify',
+    'Vercel',
+    'Render',
+    'Heroku',
+    'Cursor',
+    'Notion',
+    'Slack'
   ];
 
   const SkillBar = ({ skill, index }: { skill: Skill; index: number }) => (
@@ -83,8 +92,9 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed font-medium">
-            A growing skill set in modern web development technologies, combined with strong problem-solving 
-            and communication abilities to create effective digital solutions.
+            A growing skill set in modern web development technologies including full-stack frameworks, databases, 
+            and deployment platforms, combined with strong problem-solving and communication abilities to create 
+            effective digital solutions for fintech and edtech applications.
           </p>
         </div>
 

@@ -4,55 +4,53 @@ import { Briefcase, Calendar, MapPin, ChevronRight } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Frontend Developer",
-      company: "Freelance",
+      title: "Junior Full Stack Developer",
+      company: "Projects & Training",
       location: "Remote",
-      period: "2023 - Present",
-      description: "Developing responsive web applications using React, TypeScript, and modern web technologies. Collaborating with clients to deliver custom solutions that meet their specific needs.",
+      period: "2025 - Present",
+      description: "Build and maintain full-stack web applications as part of structured training and personal projects. Work with frontend frameworks and backend services to create functional systems.",
       achievements: [
-        "Built responsive web applications using React, TypeScript, and modern web technologies",
-        "Collaborated with clients to deliver custom solutions that meet their specific needs",
-        "Implemented best practices in code quality, testing, and deployment",
-        "Created user-friendly interfaces with focus on performance and accessibility"
+        "Build and maintain full-stack web applications as part of structured training and personal projects",
+        "Work with frontend frameworks and backend services to create functional systems",
+        "Implement authentication, basic data handling, and API integrations",
+        "Use Git/GitHub for version control and collaboration",
+        "Apply secure development and clean code principles"
       ]
     },
     {
-      title: "Seasoned Forex Trader",
-      company: "Independent Trading",
+      title: "IT Support & Systems Assistant",
+      company: "Project-Based",
+      location: "Remote",
+      period: "2020 - Present",
+      description: "Provide basic IT and application support for web-based systems. Assist with system setup, testing, troubleshooting, and documentation.",
+      achievements: [
+        "Provide basic IT and application support for web-based systems",
+        "Assist with system setup, testing, troubleshooting, and documentation",
+        "Support users with basic technical issues and system navigation"
+      ]
+    },
+    {
+      title: "Forex Trader",
+      company: "Independent",
       location: "Global Markets",
       period: "2020 - Present",
-      description: "Experienced forex trader with deep market knowledge and former partnerships with top-tier FX brokers worldwide.",
+      description: "Trade global forex markets using structured risk management strategies. Apply technical analysis and market structure concepts.",
       achievements: [
-        "Developed comprehensive understanding of market depth and liquidity analysis",
-        "Former partner with leading FX brokers including major international institutions",
-        "Specialized in technical analysis, risk management, and algorithmic trading strategies",
-        "Consistently profitable trading across multiple currency pairs and market conditions"
+        "Trade global forex markets using structured risk management strategies",
+        "Apply technical analysis and market structure concepts",
+        "Former partner with international FX brokers",
+        "Strong analytical and decision-making skills transferable to software engineering"
       ]
     },
     {
-      title: "Freelance Web Developer",
-      company: "Self-Employed",
-      location: "Remote",
-      period: "2020 - Present",
-      description: "Providing web development services to small businesses and individuals, creating responsive and modern websites.",
-      achievements: [
-        "Developed 5+ responsive websites using HTML, CSS, and JavaScript",
-        "Implemented modern design principles and user experience best practices",
-        "Collaborated with clients to understand requirements and deliver solutions",
-        "Maintained and updated existing websites for ongoing clients"
-      ]
-    },
-    {
-      title: "Cybersecurity Training Participant",
+      title: "Cybersecurity Trainee",
       company: "OPSWAT Academy",
       location: "Online",
       period: "2025 - Present",
-      description: "Participating in comprehensive cybersecurity training program to develop security skills and knowledge.",
+      description: "Training in cybersecurity fundamentals and secure system practices. Exposure to threat awareness, vulnerabilities, and mitigation concepts.",
       achievements: [
-        "Learning cybersecurity fundamentals and best practices",
-        "Understanding threat detection and prevention techniques",
-        "Gaining hands-on experience with security tools and technologies",
-        "Preparing for industry-recognized cybersecurity certifications"
+        "Training in cybersecurity fundamentals and secure system practices",
+        "Exposure to threat awareness, vulnerabilities, and mitigation concepts"
       ]
     }
   ];
@@ -64,9 +62,9 @@ const Experience = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Experience</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-            My experience spans across multiple domains including financial markets, software development, and cybersecurity. 
-            From forex trading with major brokers to web development and security training, I bring a unique combination 
-            of analytical thinking, technical skills, and market knowledge that positions me well for fintech and technology roles.
+            My experience spans across software development, IT support, financial markets, and cybersecurity. 
+            From building full-stack applications to forex trading and security training, I bring a unique combination 
+            of technical skills, analytical thinking, and market knowledge that positions me well for entry-level software engineering roles.
           </p>
         </div>
 

@@ -4,11 +4,32 @@ import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
 const Education = () => {
   const educationData = [
     {
-      degree: "Software Development Program",
-      institution: "Zindua",
-      location: "Online/Remote",
-      period: "April 2025 - September 2025",
+      degree: "Bachelor of Commerce (BCOM)",
+      institution: "Masinde Muliro University of Science & Technology (MMUST)",
+      location: "Kenya",
+      period: "Currently Enrolled",
       gpa: "In Progress",
+      achievements: [
+        "Business and Commerce Studies",
+        "Financial Analysis",
+        "Management Principles",
+        "Academic Excellence"
+      ],
+      coursework: [
+        "Business Management",
+        "Financial Accounting",
+        "Economics",
+        "Marketing",
+        "Statistics",
+        "Business Law"
+      ]
+    },
+    {
+      degree: "Software Development Program (Full Stack)",
+      institution: "Zindua School",
+      location: "Online/Remote",
+      period: "2025",
+      gpa: "3.4",
       achievements: [
         "Full-Stack Development Training",
         "Modern Web Technologies",
@@ -26,10 +47,10 @@ const Education = () => {
     },
     {
       degree: "Cybersecurity Fundamentals",
-      institution: "OPSWAT",
+      institution: "OPSWAT Academy",
       location: "Online",
       period: "2025",
-      gpa: "In Progress",
+      gpa: "3.4",
       achievements: [
         "Cybersecurity Best Practices",
         "Threat Detection & Prevention",
@@ -43,6 +64,25 @@ const Education = () => {
         "Incident Response",
         "Security Tools",
         "Compliance Standards"
+      ]
+    },
+    {
+      degree: "Kenya Certificate of Secondary Education (KCSE)",
+      institution: "Rockfields Senior School (RSS)",
+      location: "Kenya",
+      period: "2024",
+      gpa: "3.6",
+      achievements: [
+        "Secondary Education Completion",
+        "Academic Excellence",
+        "Foundation for Higher Education"
+      ],
+      coursework: [
+        "Mathematics",
+        "English",
+        "Sciences",
+        "Business Studies",
+        "Computer Studies"
       ]
     }
   ];
@@ -72,8 +112,9 @@ const Education = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Education</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            My educational journey includes ongoing software development training and professional certifications 
-            in finance and cybersecurity, providing me with a diverse skill set for modern technology roles.
+            My educational journey includes a Bachelor's degree in Commerce, software development training, 
+            cybersecurity fundamentals, and professional certifications in finance and cybersecurity, providing 
+            me with a diverse skill set for entry-level software engineering roles.
           </p>
         </div>
 
