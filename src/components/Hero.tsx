@@ -22,7 +22,7 @@ const Hero = () => {
                 onClick={() => setIsModalOpen(true)}
               >
                 <img 
-                  src="/Rodney.jpeg" 
+                  src="/RG2026.jpeg" 
                   alt="Rodney Gilbert" 
                   className="w-full h-full object-cover rounded-full"
                   style={{
@@ -100,7 +100,7 @@ const Hero = () => {
               <X size={24} className="text-gray-600 dark:text-gray-300" />
             </button>
             <img 
-              src="/Rodney.jpeg" 
+              src="/RG2026.jpeg" 
               alt="Rodney Gilbert - Full Photo" 
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
             />

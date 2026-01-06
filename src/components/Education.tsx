@@ -70,7 +70,7 @@ const Education = () => {
       degree: "Kenya Certificate of Secondary Education (KCSE)",
       institution: "Rockfields Senior School (RSS)",
       location: "Kenya",
-      period: "2024",
+      period: "",
       gpa: "3.6",
       achievements: [
         "Secondary Education Completion",
@@ -141,10 +141,12 @@ const Education = () => {
                             <MapPin size={16} />
                             <span>{edu.location}</span>
                           </div>
-                          <div className="flex items-center space-x-1">
-                            <Calendar size={16} />
-                            <span>{edu.period}</span>
-                          </div>
+                          {edu.period && (
+                            <div className="flex items-center space-x-1">
+                              <Calendar size={16} />
+                              <span>{edu.period}</span>
+                            </div>
+                          )}
                           <div className="flex items-center space-x-1">
                             <Award size={16} />
                             <span>GPA: {edu.gpa}</span>
