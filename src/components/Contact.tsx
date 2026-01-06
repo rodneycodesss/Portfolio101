@@ -1,13 +1,11 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Calendar, Send, CheckCircle, ArrowRight } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [countdown, setCountdown] = useState(4);
-  const formRef = useRef<HTMLFormElement>(null);
 
   const contactInfo = [
     {
@@ -65,40 +63,31 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
     try {
-      // Log form data for debugging
-      const formData = new FormData(formRef.current!);
-      console.log('Form data being sent:', {
-        firstName: formData.get('firstName'),
-        lastName: formData.get('lastName'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message')
+      const response = await fetch('https://formspree.io/f/mqeavrvb', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
 
-      // You'll need to replace these with your actual EmailJS credentials
-      const result = await emailjs.sendForm(
-        'service_rkb5qye', // Replace with your EmailJS service ID
-        'template_aev6y9v', // Replace with your EmailJS template ID
-        formRef.current!,
-        'Vg6irtdCrNrZN8X1C' // Replace with your EmailJS public key
-      );
-
-      console.log('Email sent successfully:', result);
-      console.log('EmailJS response:', result.text);
-      setSubmitStatus('success');
-      setShowSuccessModal(true);
-      
-      // Reset form
-      if (formRef.current) {
-        formRef.current.reset();
+      if (response.ok) {
+        setSubmitStatus('success');
+        setShowSuccessModal(true);
+        form.reset();
+      } else {
+        const data = await response.json();
+        if (data.errors) {
+          console.error('Form errors:', data.errors);
+        }
+        setSubmitStatus('error');
       }
     } catch (error) {
-      console.error('Email send failed:', error);
-      console.error('Error details:', {
-        message: error.message,
-        stack: error.stack
-      });
+      console.error('Form submission failed:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -164,7 +153,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formspree.io/f/mqeavrvb" method="POST" onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium mb-2">
@@ -317,7 +306,7 @@ const Contact = () => {
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         @keyframes scale-in {
           from {
             opacity: 0;
