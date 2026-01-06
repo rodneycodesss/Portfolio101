@@ -26,7 +26,7 @@ const Hero = () => {
                   alt="Rodney Gilbert" 
                   className="w-full h-full object-cover rounded-full"
                   style={{
-                    objectPosition: 'center 20%'
+                    objectPosition: 'center center'
                   }}
                   onError={(e) => {
                     // Fallback to initials if image fails to load
